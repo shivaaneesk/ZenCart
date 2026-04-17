@@ -33,7 +33,7 @@ const CommandBar = () => {
     const lon = 80.2316;
 
     try {
-      const response = await fetch('http://localhost:3001/api/search', {
+      const response = await fetch('https://zencart-api-1059211600513.asia-south1.run.app', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query, lat, lon })
